@@ -7,7 +7,9 @@ authors = [
     { name = "Abdul Qadir", email = "abdul.qadir@netrefer.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "tzdata>=2026.4",
+]
 
 [build-system]
 requires = ["uv_build>=0.12.18,<0.13.0"]
