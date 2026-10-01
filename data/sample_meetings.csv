@@ -1,0 +1,41 @@
+id,title,start_local,duration_min,timezone,organizer,attendees,room,status
+1,Weekly Kickoff,2026-09-28 09:00,30,Asia/Karachi,ali@meetdesk.test,ali@meetdesk.test;sara@meetdesk.test;omar@meetdesk.test;zain@meetdesk.test;hina@meetdesk.test,Board,confirmed
+2,Sprint Planning,2026-09-28 10:00,90,Asia/Karachi,sara@meetdesk.test,sara@meetdesk.test;omar@meetdesk.test;zain@meetdesk.test,Studio,confirmed
+3,Design Review,2026-09-28 10:30,60,Asia/Karachi,ali@meetdesk.test,ali@meetdesk.test;hina@meetdesk.test,Huddle,confirmed
+4,Budget Review,2026-09-28 13:00,60,Asia/Karachi,ali@meetdesk.test,ali@meetdesk.test;omar@meetdesk.test,Board,confirmed
+5,Vendor Call,2026-09-28 13:30,60,Asia/Karachi,hina@meetdesk.test,hina@meetdesk.test;ali@meetdesk.test,Huddle,confirmed
+6,UK Client Sync,2026-09-28 11:00,45,Europe/London,sara@meetdesk.test,sara@meetdesk.test;zain@meetdesk.test,Studio,confirmed
+7,1:1 Omar/Zain,2026-09-28 16:00,30,Asia/Karachi,omar@meetdesk.test,omar@meetdesk.test;zain@meetdesk.test,Huddle,confirmed
+8,Hiring Sync,2026-09-28 16:45,45,Asia/Karachi,hina@meetdesk.test,hina@meetdesk.test;sara@meetdesk.test;ali@meetdesk.test,Board,confirmed
+9,Daily Standup,2026-09-29 09:15,15,Asia/Karachi,zain@meetdesk.test,zain@meetdesk.test;ali@meetdesk.test;sara@meetdesk.test;omar@meetdesk.test;hina@meetdesk.test,Huddle,confirmed
+10,API Design,2026-09-29 10:00,30,Asia/Karachi,zain@meetdesk.test,zain@meetdesk.test;omar@meetdesk.test,Studio,confirmed
+11,Architecture Deep Dive,2026-09-29 10:30,60,Asia/Karachi,zain@meetdesk.test,zain@meetdesk.test;hina@meetdesk.test,Board,confirmed
+12,Marketing Sync,2026-09-29 11:00,45,Asia/Karachi,sara@meetdesk.test,sara@meetdesk.test;ali@meetdesk.test,Huddle,confirmed
+13,Customer Demo Rehearsal,2026-09-29 14:00,60,Asia/Karachi,omar@meetdesk.test,omar@meetdesk.test;sara@meetdesk.test,Studio,cancelled
+14,Roadmap Check-in,2026-09-29 15:30,45,Asia/Karachi,hina@meetdesk.test,hina@meetdesk.test;zain@meetdesk.test,Huddle,confirmed
+15,Partner Review,2026-09-29 16:30,60,Asia/Karachi,ali@meetdesk.test,ali@meetdesk.test;hina@meetdesk.test;omar@meetdesk.test,Board,confirmed
+16,US Investor Update,2026-09-29 09:00,30,America/New_York,sara@meetdesk.test,sara@meetdesk.test;ali@meetdesk.test,Studio,confirmed
+17,Daily Standup,2026-09-30 09:15,15,Asia/Karachi,zain@meetdesk.test,zain@meetdesk.test;ali@meetdesk.test;sara@meetdesk.test;omar@meetdesk.test;hina@meetdesk.test,Huddle,confirmed
+18,Product Review,2026-09-30 10:00,60,Asia/Karachi,ali@meetdesk.test,ali@meetdesk.test;sara@meetdesk.test;hina@meetdesk.test,Board,confirmed
+19,Infra Planning,2026-09-30 10:00,45,Asia/Karachi,omar@meetdesk.test,omar@meetdesk.test;zain@meetdesk.test,Studio,confirmed
+20,Lunch & Learn,2026-09-30 12:30,60,Asia/Karachi,hina@meetdesk.test,hina@meetdesk.test;ali@meetdesk.test;sara@meetdesk.test;omar@meetdesk.test;zain@meetdesk.test,Board,confirmed
+21,UK Sales Pipeline,2026-09-30 10:00,60,Europe/London,sara@meetdesk.test,sara@meetdesk.test;omar@meetdesk.test,Studio,confirmed
+22,Content Calendar,2026-09-30 14:30,45,Asia/Karachi,hina@meetdesk.test,hina@meetdesk.test;sara@meetdesk.test,Huddle,confirmed
+23,QA Triage,2026-09-30 15:15,30,Asia/Karachi,omar@meetdesk.test,omar@meetdesk.test;zain@meetdesk.test,Studio,confirmed
+24,Security Audit Prep,2026-09-30 16:00,60,Asia/Karachi,zain@meetdesk.test,zain@meetdesk.test;ali@meetdesk.test,Board,cancelled
+25,Daily Standup,2026-10-01 09:15,15,Asia/Karachi,zain@meetdesk.test,zain@meetdesk.test;ali@meetdesk.test;sara@meetdesk.test;omar@meetdesk.test;hina@meetdesk.test,Huddle,confirmed
+26,Customer Onboarding,2026-10-01 10:00,60,Asia/Karachi,sara@meetdesk.test,sara@meetdesk.test;hina@meetdesk.test,Studio,confirmed
+27,Code Review Session,2026-10-01 11:15,45,Asia/Karachi,omar@meetdesk.test,omar@meetdesk.test;zain@meetdesk.test;ali@meetdesk.test,Board,confirmed
+28,Finance Sync,2026-10-01 14:00,30,Asia/Karachi,ali@meetdesk.test,ali@meetdesk.test;sara@meetdesk.test,Huddle,confirmed
+29,UX Workshop,2026-10-01 15:00,90,Asia/Karachi,hina@meetdesk.test,hina@meetdesk.test;zain@meetdesk.test,Studio,confirmed
+30,Release Go/No-Go,2026-10-01 16:45,30,Asia/Karachi,zain@meetdesk.test,zain@meetdesk.test;hina@meetdesk.test;sara@meetdesk.test,Board,confirmed
+31,London Office Sync,2026-10-01 13:30,60,Europe/London,omar@meetdesk.test,omar@meetdesk.test;ali@meetdesk.test,Board,confirmed
+32,US Partner Call,2026-10-01 09:00,45,America/New_York,sara@meetdesk.test,sara@meetdesk.test;omar@meetdesk.test,Huddle,confirmed
+33,Daily Standup,2026-10-02 09:15,15,Asia/Karachi,zain@meetdesk.test,zain@meetdesk.test;ali@meetdesk.test;sara@meetdesk.test;omar@meetdesk.test;hina@meetdesk.test,Huddle,confirmed
+34,Sprint Review,2026-10-02 10:00,60,Asia/Karachi,sara@meetdesk.test,sara@meetdesk.test;ali@meetdesk.test;omar@meetdesk.test;zain@meetdesk.test;hina@meetdesk.test,Board,confirmed
+35,Sprint Retro,2026-10-02 11:15,45,Asia/Karachi,sara@meetdesk.test,sara@meetdesk.test;omar@meetdesk.test;zain@meetdesk.test,Studio,confirmed
+36,1:1 Ali/Hina,2026-10-02 11:30,30,Asia/Karachi,ali@meetdesk.test,ali@meetdesk.test;hina@meetdesk.test,Huddle,confirmed
+37,Offsite Planning,2026-10-02 14:30,30,Asia/Karachi,hina@meetdesk.test,hina@meetdesk.test;omar@meetdesk.test,Board,cancelled
+38,Support Rota Handover,2026-10-02 15:30,30,Asia/Karachi,zain@meetdesk.test,zain@meetdesk.test;ali@meetdesk.test,Huddle,confirmed
+39,UK Quarter Close,2026-10-02 12:30,45,Europe/London,hina@meetdesk.test,hina@meetdesk.test;sara@meetdesk.test,Studio,confirmed
+40,Week Wrap-up,2026-10-02 17:30,30,Asia/Karachi,ali@meetdesk.test,ali@meetdesk.test;omar@meetdesk.test;zain@meetdesk.test,Board,confirmed
