@@ -28,6 +28,8 @@ class Meeting:
                 raise ValueError(f"{name} must be a timezone-aware UTC datetime")
         if self.end <= self.start:
             raise ValueError("end must be after start")
+        if self.duration_min < 1:
+            raise ValueError("meeting must last at least one minute")
 
     @property
     def duration_min(self) -> int:

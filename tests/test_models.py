@@ -52,3 +52,11 @@ def test_meeting_rejects_end_not_after_start(end_minute: int) -> None:
             datetime(2026, 9, 28, 5, 30, tzinfo=UTC),
             datetime(2026, 9, 28, 5, end_minute, tzinfo=UTC),
         )
+
+
+def test_meeting_rejects_duration_of_zero_minutes() -> None:
+    with pytest.raises(ValueError, match="at least one minute"):
+        _meeting(
+            datetime(2026, 9, 28, 5, 30, tzinfo=UTC),
+            datetime(2026, 9, 28, 5, 30, 30, tzinfo=UTC),
+        )
