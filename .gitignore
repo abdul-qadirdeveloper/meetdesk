@@ -20,3 +20,5 @@ htmlcov/
 
 # Generated output
 out/
+
+CLAUDE.local.md
