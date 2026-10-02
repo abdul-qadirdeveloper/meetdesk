@@ -26,7 +26,10 @@ def find_conflicts(meetings: Iterable[Meeting]) -> list[Conflict]:
     )
     conflicts: list[Conflict] = []
     for index, earlier in enumerate(active):
-        for later in active[index + 1 :]:
+        # Sorted by start: once a neighbour starts at or after this meeting's end,
+        # no later one can overlap it either.
+        for position in range(index + 1, len(active)):
+            later = active[position]
             if later.start >= earlier.end:
                 break
             attendees = earlier.attendees & later.attendees
