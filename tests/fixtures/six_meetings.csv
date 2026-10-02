@@ -1,0 +1,7 @@
+id,title,start_local,duration_min,timezone,organizer,attendees,room,status
+1,Standup,2026-09-28 09:00,15,Asia/Karachi,ali@meetdesk.test,ali@meetdesk.test;sara@meetdesk.test,Huddle,confirmed
+2,Design review,2026-09-28 09:10,50,Asia/Karachi,sara@meetdesk.test,sara@meetdesk.test;omar@meetdesk.test,Board,confirmed
+3,1:1,2026-09-28 10:00,30,Asia/Karachi,ali@meetdesk.test,ali@meetdesk.test;omar@meetdesk.test,Huddle,confirmed
+4,Client call,2026-09-28 09:30,30,Asia/Karachi,zain@meetdesk.test,zain@meetdesk.test,Huddle,confirmed
+5,Budget sync,2026-09-28 10:15,30,Asia/Karachi,ali@meetdesk.test,ali@meetdesk.test,Studio,cancelled
+6,Vendor call,2026-09-28 05:20,20,UTC,omar@meetdesk.test,omar@meetdesk.test,Studio,confirmed

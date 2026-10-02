@@ -1,0 +1,3 @@
+id,title,start_local,duration_min,timezone,organizer,attendees,room,status
+1,Weekly Kickoff,2026-09-28 09:00,30,Asia/Karachi,ali@meetdesk.test,ali@meetdesk.test;sara@meetdesk.test,Board,confirmed
+2,Design Review,2026-09-28 10:30,60,PKT,ali@meetdesk.test,ali@meetdesk.test;hina@meetdesk.test,Huddle,confirmed
