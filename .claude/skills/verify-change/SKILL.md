@@ -1,6 +1,6 @@
 ---
 name: verify-change
-description: Verify any code change in MeetDesk before calling it done. Use after implementing, refactoring or fixing anything in src/ or tests/.
+description: Always use before saying a task is complete. Use after implementing, refactoring or fixing anything in src/ or tests/.
 ---
 # Verify a change
 
