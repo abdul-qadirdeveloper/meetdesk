@@ -1,7 +1,11 @@
 import subprocess
 
+
 def run(*args):
-    return subprocess.run(list(args), capture_output=True, text=True).stdout
+    return subprocess.run(
+        list(args), capture_output=True, text=True, check=False
+    ).stdout
+
 
 print("State after compaction.")
 print("Branch:", run("git", "branch", "--show-current").strip())
