@@ -21,4 +21,6 @@ htmlcov/
 # Generated output
 out/
 
+# Claude Code local files
 CLAUDE.local.md
+.claude/worktrees/
