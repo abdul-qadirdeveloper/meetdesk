@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "team-directory": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "run",
+        "python",
+        "mcp_server/team_directory.py"
+      ],
+      "env": {}
+    }
+  }
+}
