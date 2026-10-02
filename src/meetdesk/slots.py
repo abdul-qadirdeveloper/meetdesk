@@ -1,4 +1,4 @@
-from collections.abc import Iterable, Mapping
+from collections.abc import Collection, Iterable, Mapping
 from dataclasses import dataclass
 from datetime import UTC, date, datetime, time, timedelta
 from zoneinfo import ZoneInfo
@@ -25,6 +25,7 @@ def find_free_slots(
     day: date,
     duration_min: int,
     working_hours: Mapping[str, tuple[str, str, str]],
+    holidays: Collection[date] = frozenset(),
 ) -> list[FreeSlot]:
     """Return the intervals on a UTC day when every attendee is free, in Asia/Karachi time.
 
@@ -32,6 +33,8 @@ def find_free_slots(
     interval is free when it lies inside every attendee's working hours and none of
     them has a non-cancelled meeting. Only intervals of at least duration_min minutes
     are returned, sorted by start.
+
+    holidays is supplied by the caller; when day is one of them no slots are returned.
 
     Raises ValueError for a non-positive duration, no attendees, an attendee without
     working hours, or malformed working hours, and zoneinfo.ZoneInfoNotFoundError
@@ -51,6 +54,8 @@ def find_free_slots(
     available: list[Interval] = [(day_start, day_start + timedelta(days=1))]
     for email in sorted(people):
         available = _intersect(available, _working_windows(day, *hours[email]))
+    if day in holidays:
+        return []
 
     busy = [
         (meeting.start, meeting.end)

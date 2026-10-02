@@ -19,6 +19,7 @@ OMAR = "omar@meetdesk.test"
 KARACHI = ZoneInfo("Asia/Karachi")
 MONDAY = date(2026, 9, 28)
 TUESDAY = date(2026, 9, 29)
+INDEPENDENCE_DAY = date(2026, 8, 14)
 
 KARACHI_HOURS = ("Asia/Karachi", "09:00", "17:00")
 LONDON_HOURS = ("Europe/London", "09:00", "17:00")
@@ -203,6 +204,38 @@ def test_attendee_emails_are_matched_case_insensitively(
         FreeSlot(pkt(9), pkt(10)),
         FreeSlot(pkt(11), pkt(17)),
     ]
+
+
+def test_holiday_gives_no_slots() -> None:
+    # 14 Aug 2026 (Pakistan's Independence Day) is outside the usual test week on purpose.
+    assert (
+        find_free_slots(
+            [], [ALI], INDEPENDENCE_DAY, 30, {ALI: KARACHI_HOURS}, {INDEPENDENCE_DAY}
+        )
+        == []
+    )
+
+
+def test_same_day_without_holidays_gives_whole_working_day() -> None:
+    assert find_free_slots([], [ALI], INDEPENDENCE_DAY, 30, {ALI: KARACHI_HOURS}) == [
+        FreeSlot(
+            datetime(2026, 8, 14, 9, tzinfo=KARACHI),
+            datetime(2026, 8, 14, 17, tzinfo=KARACHI),
+        ),
+    ]
+
+
+def test_holiday_on_another_day_does_not_block_time() -> None:
+    assert find_free_slots(
+        [], [ALI], MONDAY, 30, {ALI: KARACHI_HOURS}, {INDEPENDENCE_DAY}
+    ) == [
+        FreeSlot(pkt(9), pkt(17)),
+    ]
+
+
+def test_invalid_arguments_still_raise_on_a_holiday() -> None:
+    with pytest.raises(ValueError, match=SARA):
+        find_free_slots([], [ALI, SARA], MONDAY, 30, {ALI: KARACHI_HOURS}, {MONDAY})
 
 
 def test_attendee_without_working_hours_raises() -> None:
