@@ -1,0 +1,21 @@
+name: Daily Meetings Report
+on:
+  schedule:
+    - cron: "7 3 * * 1-5"      # 03:07 UTC = 08:07 Karachi, weekdays
+  workflow_dispatch:           # adds a "Run workflow" button
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 1
+      - uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          prompt: "Read data/sample_meetings.csv and src/. Write a short report: double-bookings in the sample week, public functions without tests, and open TODO comments."
+          claude_args: '--max-turns 8 --allowedTools "Read,Glob,Grep"'
